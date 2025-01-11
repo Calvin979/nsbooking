@@ -8,6 +8,10 @@
     @include responsive(tablet-medium) {
         padding: 3rem;
     }
+
+    @include responsive(phone) {
+        flex-direction: column;
+    }
 }
 
 .description {
@@ -20,6 +24,11 @@
     @include responsive(tablet-medium) {
         padding: 2rem;
         margin-right: 3rem;
+    }
+
+    @include responsive(phone) {
+        margin-right: 0;
+        margin-bottom: 3rem;
     }
 }
 
