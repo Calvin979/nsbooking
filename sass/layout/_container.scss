@@ -6,4 +6,10 @@
 
     // for test only
     min-height: 50rem;
+
+    @include responsive(tablet-lanscape) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 }

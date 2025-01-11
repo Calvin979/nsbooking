@@ -13,6 +13,10 @@ html {
     box-sizing: border-box;
     // 1rem = 10px
     font-size: 62.5%;
+
+    @include responsive(tablet-large) {
+        font-size: 50%;
+    }
 }
 
 body {

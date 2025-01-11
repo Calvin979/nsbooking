@@ -3,11 +3,25 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @include responsive(tablet-medium) {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
     &__item {
         position: relative;
 
         &:not(:last-child) {
             margin-bottom: .5rem;
+        }
+
+        @include responsive(tablet-medium) {
+            flex: 1;
+
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -49,6 +63,11 @@
 
         display: flex;
         align-items: center;
+
+        @include responsive(tablet-medium) {
+            justify-content: center;
+            padding: 2rem;
+        }
     }
 
 
